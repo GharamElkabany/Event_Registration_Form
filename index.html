@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Event Registration</title>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <h3>Event Registration</h3>
+        <h5>Register with us to get more details</h5>
+        
+        <label for="firstName">Name</label> <br>
+        <div class="name-container">
+            <div class="name-input">
+                <i class="fa fa-user"></i>
+                <input type="text" name="firstName" id="firstName" placeholder="First" required> 
+            </div>
+            <div class="name-input">
+                <input type="text" name="lastName" id="lastName" placeholder="Last" required>
+            </div>
+        </div>
+
+        <label for="email">Email</label><br>
+        <div class="container">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" id="email" required>
+        </div>
+        
+        <label for="phone">Phone</label><br>
+        <div class="container">
+            <i class="fa fa-phone"></i>
+            <input type="tel" name="phone" id="phone" required>
+        </div>
+
+        <label for="topic">Topic</label><br>
+        <div class="container">
+            <i class="fa-solid fa-book"></i>
+            <select name="topic" id="topic" required>
+                <option value=""></option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">FullStack</option>
+            </select>
+        </div>
+
+        <label for="slot">Preferred Slot</label><br>
+        <div class="container">
+            <i class="fa fa-calendar-days"></i>
+            <select name="slot" id="slot" required>
+                <option value=""></option>
+                <option value="12-2">12pm - 2pm</option>
+                <option value="3-5">3pm - 5pm</option>
+                <option value="6-8">6pm - 8pm</option>
+            </select>
+        </div>
+
+        <button type="submit">Sign me up</button>
+    </form>
+    
+</body>
+</html>
